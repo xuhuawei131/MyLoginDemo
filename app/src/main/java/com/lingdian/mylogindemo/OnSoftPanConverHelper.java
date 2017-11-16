@@ -13,6 +13,7 @@ public class OnSoftPanConverHelper implements ViewTreeObserver.OnGlobalLayoutLis
     private View rootView;
     private View bottomView;
     private int scrollDistance = 0;
+
     private boolean isInit = false;
     private int SRC_HEIGHT = 0;
 
@@ -49,7 +50,7 @@ public class OnSoftPanConverHelper implements ViewTreeObserver.OnGlobalLayoutLis
             scrollDistance = scrollHeight;
 
             //5、让界面整体上移键盘的高度
-            rootView.scrollBy(0, scrollHeight);
+            rootView.scrollBy(0, scrollDistance);
         } else {
             //不可见区域 小于100 说明键盘隐藏了 把界面下移 移回原有高度
             rootView.scrollBy(0, -scrollDistance);

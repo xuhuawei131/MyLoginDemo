@@ -31,12 +31,24 @@
                     android:layout_marginBottom="20dp"
                     android:src="@mipmap/ic_launcher_round" />
 
-                <EditText
+                <com.lingdian.mylogindemo.MyEditTitleLayout
                     android:layout_width="match_parent"
+                    android:background="@color/colorPrimaryDark"
                     android:layout_height="50dp"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="10dp"
+
+                    app:edit_max_length="11"
+                    app:edit_text_size="12sp"
+                    app:edit_hint="请输入密码"
+
+                    app:title_hint_color="@android:color/black"
+                    app:title_warn_color="@android:color/holo_red_dark"
+                    app:title_text_size="10sp"
+                    app:title_hint_text="密码11位"
+                    />
 
                 <EditText
+                    android:id="@+id/edit_code"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_margin="10dp" />
